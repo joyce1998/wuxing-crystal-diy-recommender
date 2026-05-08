@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY搭配 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto; min-height: 100vh;">
+  
+  <!-- 状态栏 -->
+  <div class="bg-white sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="bg-white border-b px-4 py-3 flex items-center">
+    <a href="home.html" class="w-10 h-10 flex items-center justify-center -ml-2">
+      <i class="fas fa-chevron-left text-gray-600"></i>
+    </a>
+    <h1 class="flex-1 text-center font-semibold text-lg -ml-10">DIY搭配</h1>
+  </div>
+
+  <!-- 内容 -->
+  <div class="pb-24">
+    
+    <!-- 我的搭配方案 -->
+    <div class="px-4 mt-4">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="font-semibold text-gray-900">我的搭配方案</h2>
+        <button class="text-primary text-sm">+ 新建搭配</button>
+      </div>
+      
+      <!-- 搭配方案卡片 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-4">
+        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=300&fit=crop" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2 py-0.5 bg-amber-100 text-amber-600 text-xs rounded-full">补金旺财</span>
+            <span class="px-2 py-0.5 bg-green-100 text-green-600 text-xs rounded-full">五行调和</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">招财进宝三合手串</h3>
+          <p class="text-xs text-gray-500 mb-3">白水晶+黄水晶+金发晶，三重能量调和五行</p>
+          <div class="flex items-center justify-between">
+            <div class="flex -space-x-2">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=50&h=50&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+              <img src="https://images.unsplash.com/photo-1551122087-f99a80a2b66f?w=50&h=50&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+              <img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923?w=50&h=50&fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+            </div>
+            <span class="text-primary font-bold">¥1,086</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 热门推荐搭配 -->
+    <div class="px-4 mt-2">
+      <h2 class="font-semibold text-gray-900 mb-3">热门推荐搭配</h2>
+      
+      <div class="space-y-3">
+        <div class="bg-white rounded-xl p-4 flex gap-3">
+          <img src="https://images.unsplash.com/photo-1603561596112-0a132b757442?w=100&h=100&fit=crop" class="w-20 h-20 rounded-xl object-cover">
+          <div class="flex-1">
+            <h3 class="font-medium text-gray-900 mb-1">桃花朵朵开套装</h3>
+            <p class="text-xs text-gray-500 mb-2">粉水晶+草莓晶+月光石</p>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-gray-400">1.2万人已选</span>
+              <span class="text-primary font-semibold text-sm">¥688</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl p-4 flex gap-3">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=100&h=100&fit=crop" class="w-20 h-20 rounded-xl object-cover">
+          <div class="flex-1">
+            <h3 class="font-medium text-gray-900 mb-1">事业腾飞套装</h3>
+            <p class="text-xs text-gray-500 mb-2">紫水晶+虎眼石+青金石</p>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-gray-400">8千人已选</span>
+              <span class="text-primary font-semibold text-sm">¥888</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl p-4 flex gap-3">
+          <img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923?w=100&h=100&fit=crop" class="w-20 h-20 rounded-xl object-cover">
+          <div class="flex-1">
+            <h3 class="font-medium text-gray-900 mb-1">平安护身套装</h3>
+            <p class="text-xs text-gray-500 mb-2">黑曜石+白水晶+茶水晶</p>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-gray-400">2.5万人已选</span>
+              <span class="text-primary font-semibold text-sm">¥568</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部Tab Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-50" style="width: 393px; margin: 0 auto;">
+    <div class="flex justify-around items-start pt-2 pb-8">
+      <a href="home.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-home text-xl"></i><span class="text-[10px] mt-1">首页</span>
+      </a>
+      <a href="bazi-input.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-calculator text-xl"></i><span class="text-[10px] mt-1">测算</span>
+      </a>
+      <a href="crystal-recommend.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-gem text-xl"></i><span class="text-[10px] mt-1">推荐</span>
+      </a>
+      <a href="messages.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-comment-dots text-xl"></i><span class="text-[10px] mt-1">消息</span>
+      </a>
+      <a href="profile.html" class="flex flex-col items-center text-primary">
+        <i class="fas fa-user text-xl"></i><span class="text-[10px] mt-1">我的</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

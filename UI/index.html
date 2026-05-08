@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五行水晶DIY智能推荐平台 - 原型展示</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, 'PingFang SC', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .phone-frame {
+      width: 393px;
+      height: 852px;
+      background: #000;
+      border-radius: 50px;
+      padding: 12px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5), inset 0 0 0 2px #333;
+      position: relative;
+    }
+    .phone-frame::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 126px;
+      height: 37px;
+      background: #000;
+      border-radius: 20px;
+      z-index: 10;
+    }
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .phone-screen iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .page-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .page-title {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .section-title {
+      color: #8B5CF6;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 40px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #8B5CF6;
+      display: inline-block;
+    }
+    .pages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .brand-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .brand-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #8B5CF6, #EC4899, #F59E0B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .brand-header p {
+      color: #6B7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 品牌头部 -->
+  <div class="brand-header">
+    <h1><i class="fas fa-gem"></i> 五行水晶DIY智能推荐平台</h1>
+    <p>高保真原型展示 · iPhone 15 Pro 尺寸</p>
+  </div>
+
+  <!-- 客户端页面 -->
+  <h2 class="section-title"><i class="fas fa-user mr-2"></i>客户端页面</h2>
+  <div class="pages-grid">
+    
+    <div class="page-card">
+      <div class="page-title">登录页</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/login.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">首页</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/home.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">八字输入</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/bazi-input.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">测算结果</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/bazi-result.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">水晶推荐</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/crystal-recommend.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">DIY搭配</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/diy-combo.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">消息中心</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/messages.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">个人中心</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/profile.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- 员工端页面 -->
+  <h2 class="section-title"><i class="fas fa-user-tie mr-2"></i>销售员工端页面</h2>
+  <div class="pages-grid">
+    
+    <div class="page-card">
+      <div class="page-title">员工登录</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/staff-login.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">客户管理</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/staff-customers.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">业绩统计</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/staff-performance.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-card">
+      <div class="page-title">邀请客户</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <iframe src="pages/staff-invite.html"></iframe>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- 页脚 -->
+  <div style="text-align: center; margin-top: 60px; color: #6B7280; font-size: 12px;">
+    <p>© 2024 五行水晶DIY智能推荐平台 · 高保真原型设计</p>
+    <p style="margin-top: 5px;">共 12 个页面 · iPhone 15 Pro (393×852) · Tailwind CSS + FontAwesome</p>
+  </div>
+
+</body>
+</html>

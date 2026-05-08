@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人中心 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto; min-height: 100vh;">
+  
+  <!-- 状态栏 -->
+  <div class="gradient-bg sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1 text-white">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 用户信息卡片 -->
+  <div class="gradient-bg px-6 pb-8 pt-2">
+    <div class="flex items-center gap-4">
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" class="w-16 h-16 rounded-full border-2 border-white/30">
+      <div class="text-white flex-1">
+        <h2 class="text-xl font-semibold">小雅</h2>
+        <p class="text-sm text-white/80">木旺缺金 · 银卡会员</p>
+      </div>
+      <button class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+        <i class="fas fa-cog text-white"></i>
+      </button>
+    </div>
+    
+    <!-- 专属顾问 -->
+    <div class="mt-4 p-3 bg-white/20 backdrop-blur rounded-xl flex items-center gap-3">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" class="w-10 h-10 rounded-full">
+      <div class="flex-1 text-white">
+        <p class="text-sm font-medium">专属顾问：王老师</p>
+        <p class="text-xs text-white/80">从业8年 · 好评率98%</p>
+      </div>
+      <button class="px-3 py-1.5 bg-white text-primary rounded-full text-xs font-medium">联系</button>
+    </div>
+  </div>
+
+  <!-- 内容 -->
+  <div class="pb-24 -mt-2">
+    
+    <!-- 数据统计 -->
+    <div class="bg-white mx-4 rounded-2xl p-4 shadow-sm">
+      <div class="grid grid-cols-3 divide-x divide-gray-100">
+        <div class="text-center">
+          <p class="text-xl font-bold text-primary">3</p>
+          <p class="text-xs text-gray-500 mt-1">测算记录</p>
+        </div>
+        <div class="text-center">
+          <p class="text-xl font-bold text-primary">5</p>
+          <p class="text-xs text-gray-500 mt-1">推荐方案</p>
+        </div>
+        <div class="text-center">
+          <p class="text-xl font-bold text-primary">2</p>
+          <p class="text-xs text-gray-500 mt-1">DIY搭配</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 功能菜单 -->
+    <div class="bg-white mx-4 mt-4 rounded-2xl overflow-hidden shadow-sm">
+      <a href="#" class="flex items-center px-4 py-4 border-b border-gray-100">
+        <div class="w-9 h-9 rounded-xl bg-purple-100 flex items-center justify-center mr-3">
+          <i class="fas fa-calculator text-primary"></i>
+        </div>
+        <span class="flex-1 text-gray-900">测算记录</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+      <a href="#" class="flex items-center px-4 py-4 border-b border-gray-100">
+        <div class="w-9 h-9 rounded-xl bg-pink-100 flex items-center justify-center mr-3">
+          <i class="fas fa-gem text-pink-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">推荐方案</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+      <a href="#" class="flex items-center px-4 py-4">
+        <div class="w-9 h-9 rounded-xl bg-amber-100 flex items-center justify-center mr-3">
+          <i class="fas fa-magic text-amber-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">DIY方案</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+    </div>
+
+    <div class="bg-white mx-4 mt-4 rounded-2xl overflow-hidden shadow-sm">
+      <a href="#" class="flex items-center px-4 py-4 border-b border-gray-100">
+        <div class="w-9 h-9 rounded-xl bg-blue-100 flex items-center justify-center mr-3">
+          <i class="fas fa-shopping-bag text-blue-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">我的订单</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+      <a href="#" class="flex items-center px-4 py-4 border-b border-gray-100">
+        <div class="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center mr-3">
+          <i class="fas fa-heart text-green-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">我的收藏</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+      <a href="#" class="flex items-center px-4 py-4">
+        <div class="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center mr-3">
+          <i class="fas fa-map-marker-alt text-gray-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">收货地址</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+    </div>
+
+    <div class="bg-white mx-4 mt-4 rounded-2xl overflow-hidden shadow-sm">
+      <a href="#" class="flex items-center px-4 py-4 border-b border-gray-100">
+        <div class="w-9 h-9 rounded-xl bg-orange-100 flex items-center justify-center mr-3">
+          <i class="fas fa-bell text-orange-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">消息设置</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+      <a href="#" class="flex items-center px-4 py-4">
+        <div class="w-9 h-9 rounded-xl bg-red-100 flex items-center justify-center mr-3">
+          <i class="fas fa-question-circle text-red-500"></i>
+        </div>
+        <span class="flex-1 text-gray-900">帮助与反馈</span>
+        <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 底部Tab Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-50" style="width: 393px; margin: 0 auto;">
+    <div class="flex justify-around items-start pt-2 pb-8">
+      <a href="home.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-home text-xl"></i><span class="text-[10px] mt-1">首页</span>
+      </a>
+      <a href="bazi-input.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-calculator text-xl"></i><span class="text-[10px] mt-1">测算</span>
+      </a>
+      <a href="crystal-recommend.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-gem text-xl"></i><span class="text-[10px] mt-1">推荐</span>
+      </a>
+      <a href="messages.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-comment-dots text-xl"></i><span class="text-[10px] mt-1">消息</span>
+      </a>
+      <a href="profile.html" class="flex flex-col items-center text-primary">
+        <i class="fas fa-user text-xl"></i><span class="text-[10px] mt-1">我的</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

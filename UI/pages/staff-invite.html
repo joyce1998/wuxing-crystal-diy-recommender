@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邀请客户 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto; min-height: 100vh;">
+  
+  <!-- 状态栏 -->
+  <div class="bg-white sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="bg-white border-b px-4 py-3">
+    <h1 class="font-semibold text-lg text-center">邀请客户</h1>
+  </div>
+
+  <!-- 内容 -->
+  <div class="px-4 pt-6 pb-24">
+    
+    <!-- 二维码卡片 -->
+    <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
+      <div class="w-48 h-48 mx-auto bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
+        <div class="text-center">
+          <i class="fas fa-qrcode text-6xl text-gray-400 mb-2"></i>
+          <p class="text-xs text-gray-500">二维码展示区域</p>
+        </div>
+      </div>
+      <h3 class="font-semibold text-gray-900 mb-1">专属邀请码</h3>
+      <p class="text-2xl font-bold text-gray-900 tracking-widest mb-4">WX2024001</p>
+      <p class="text-xs text-gray-500 mb-4">客户扫码后自动绑定为您的一对一服务客户</p>
+      
+      <div class="flex gap-3">
+        <button class="flex-1 py-3 bg-gray-900 text-white rounded-xl text-sm font-medium">
+          <i class="fas fa-share-alt mr-2"></i>分享链接
+        </button>
+        <button class="flex-1 py-3 border border-gray-300 text-gray-700 rounded-xl text-sm font-medium">
+          <i class="fas fa-download mr-2"></i>保存图片
+        </button>
+      </div>
+    </div>
+
+    <!-- 邀请记录 -->
+    <div class="mt-6">
+      <h3 class="font-medium text-gray-900 mb-3">近期邀请</h3>
+      <div class="space-y-3">
+        <div class="bg-white rounded-xl p-4 flex items-center">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" class="w-10 h-10 rounded-full">
+          <div class="flex-1 ml-3">
+            <h4 class="font-medium text-gray-900">小美</h4>
+            <p class="text-xs text-gray-500">3天前邀请 · 已完成测算</p>
+          </div>
+          <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded-full">已绑定</span>
+        </div>
+        
+        <div class="bg-white rounded-xl p-4 flex items-center">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop&crop=face" class="w-10 h-10 rounded-full">
+          <div class="flex-1 ml-3">
+            <h4 class="font-medium text-gray-900">王女士</h4>
+            <p class="text-xs text-gray-500">5天前邀请 · 已下单</p>
+          </div>
+          <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded-full">已绑定</span>
+        </div>
+        
+        <div class="bg-white rounded-xl p-4 flex items-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" class="w-10 h-10 rounded-full">
+          <div class="flex-1 ml-3">
+            <h4 class="font-medium text-gray-900">张先生</h4>
+            <p class="text-xs text-gray-500">1周前邀请 · 测算中</p>
+          </div>
+          <span class="px-2 py-1 bg-amber-100 text-amber-600 text-xs rounded-full">待完善</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部Tab -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t z-50" style="width: 393px; margin: 0 auto;">
+    <div class="flex justify-around items-start pt-2 pb-8">
+      <a href="staff-customers.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-users text-xl"></i><span class="text-[10px] mt-1">客户</span>
+      </a>
+      <a href="staff-performance.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-chart-bar text-xl"></i><span class="text-[10px] mt-1">业绩</span>
+      </a>
+      <a href="staff-invite.html" class="flex flex-col items-center text-gray-900">
+        <i class="fas fa-qrcode text-xl"></i><span class="text-[10px] mt-1">邀请</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-user text-xl"></i><span class="text-[10px] mt-1">我的</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

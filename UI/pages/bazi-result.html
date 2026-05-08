@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测算结果 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto;">
+  
+  <!-- 状态栏 -->
+  <div class="bg-white sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="bg-white border-b px-4 py-3 flex items-center">
+    <a href="bazi-input.html" class="w-10 h-10 flex items-center justify-center -ml-2">
+      <i class="fas fa-chevron-left text-gray-600"></i>
+    </a>
+    <h1 class="flex-1 text-center font-semibold text-lg -ml-10">测算结果</h1>
+    <button class="text-primary text-sm">分享</button>
+  </div>
+
+  <!-- 内容 -->
+  <div class="pb-24">
+    
+    <!-- 八字卡片 -->
+    <div class="mx-4 mt-4 p-5 rounded-2xl gradient-bg text-white">
+      <div class="text-center mb-4">
+        <h2 class="text-lg font-semibold">张小明 的八字命盘</h2>
+        <p class="text-sm text-white/80 mt-1">1995年3月15日 辰时</p>
+      </div>
+      <div class="grid grid-cols-4 gap-2 text-center">
+        <div class="bg-white/20 rounded-xl p-3">
+          <div class="text-xs text-white/70 mb-1">年柱</div>
+          <div class="text-xl font-bold">乙亥</div>
+          <div class="text-xs text-white/70 mt-1">木水</div>
+        </div>
+        <div class="bg-white/20 rounded-xl p-3">
+          <div class="text-xs text-white/70 mb-1">月柱</div>
+          <div class="text-xl font-bold">己卯</div>
+          <div class="text-xs text-white/70 mt-1">土木</div>
+        </div>
+        <div class="bg-white/20 rounded-xl p-3">
+          <div class="text-xs text-white/70 mb-1">日柱</div>
+          <div class="text-xl font-bold">丙寅</div>
+          <div class="text-xs text-white/70 mt-1">火木</div>
+        </div>
+        <div class="bg-white/20 rounded-xl p-3">
+          <div class="text-xs text-white/70 mb-1">时柱</div>
+          <div class="text-xl font-bold">壬辰</div>
+          <div class="text-xs text-white/70 mt-1">水土</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 五行分析 -->
+    <div class="bg-white mx-4 mt-4 rounded-2xl p-5">
+      <h3 class="font-semibold text-gray-900 mb-4 flex items-center">
+        <i class="fas fa-chart-pie text-primary mr-2"></i>五行分析
+      </h3>
+      <div class="space-y-3">
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-gray-600">木</span>
+            <span class="text-green-600 font-medium">旺 (4)</span>
+          </div>
+          <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-gray-600">火</span>
+            <span class="text-red-500 font-medium">中 (1)</span>
+          </div>
+          <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-red-500 rounded-full" style="width: 20%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-gray-600">土</span>
+            <span class="text-amber-600 font-medium">中 (2)</span>
+          </div>
+          <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-amber-500 rounded-full" style="width: 40%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-gray-600">金</span>
+            <span class="text-gray-400 font-medium">缺 (0)</span>
+          </div>
+          <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-gray-400 rounded-full" style="width: 0%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-gray-600">水</span>
+            <span class="text-blue-500 font-medium">中 (2)</span>
+          </div>
+          <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-blue-500 rounded-full" style="width: 40%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 p-3 bg-purple-50 rounded-xl">
+        <p class="text-sm text-purple-800">
+          <i class="fas fa-star text-primary mr-1"></i>
+          <strong>喜用神：</strong>金、火 &nbsp;|&nbsp; <strong>忌神：</strong>木、水
+        </p>
+      </div>
+    </div>
+
+    <!-- 命理解读 -->
+    <div class="bg-white mx-4 mt-4 rounded-2xl p-5">
+      <h3 class="font-semibold text-gray-900 mb-4 flex items-center">
+        <i class="fas fa-book-open text-primary mr-2"></i>命理解读
+      </h3>
+      <div class="space-y-4">
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-heart text-pink-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-900 mb-1">感情运势</h4>
+            <p class="text-sm text-gray-600">桃花运旺盛，异性缘佳，但需注意烂桃花...</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-coins text-amber-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-900 mb-1">财运分析</h4>
+            <p class="text-sm text-gray-600">财星不显，宜稳中求财，适合固定收入...</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-briefcase text-blue-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium text-gray-900 mb-1">事业发展</h4>
+            <p class="text-sm text-gray-600">适合从事教育、文化、木业相关行业...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 推荐按钮 -->
+    <div class="mx-4 mt-4">
+      <button onclick="location.href='crystal-recommend.html'" class="w-full py-4 gradient-bg text-white rounded-xl font-semibold shadow-lg">
+        <i class="fas fa-gem mr-2"></i>查看我的水晶推荐方案
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>

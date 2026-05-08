@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>消息中心 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto; min-height: 100vh;">
+  
+  <!-- 状态栏 -->
+  <div class="bg-white sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="bg-white border-b px-4 py-3 flex items-center justify-between">
+    <div class="w-10"></div>
+    <h1 class="font-semibold text-lg">消息中心</h1>
+    <button class="text-sm text-gray-500">全部已读</button>
+  </div>
+
+  <!-- 内容 -->
+  <div class="pb-24">
+    
+    <!-- 消息分类 -->
+    <div class="bg-white px-4 py-3 flex gap-4 border-b">
+      <button class="pb-2 border-b-2 border-primary text-primary text-sm font-medium">全部</button>
+      <button class="pb-2 text-gray-500 text-sm">系统通知</button>
+      <button class="pb-2 text-gray-500 text-sm">服务提醒</button>
+      <button class="pb-2 text-gray-500 text-sm relative">
+        营销
+        <span class="absolute -top-1 -right-2 w-2 h-2 bg-red-500 rounded-full"></span>
+      </button>
+    </div>
+
+    <!-- 消息列表 -->
+    <div class="divide-y divide-gray-100">
+      
+      <!-- 消息项1 -->
+      <div class="bg-white px-4 py-4 flex gap-3">
+        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-gem text-primary text-lg"></i>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-medium text-gray-900">水晶推荐方案已生成</h3>
+            <span class="text-xs text-gray-400">刚刚</span>
+          </div>
+          <p class="text-sm text-gray-500">根据您的八字测算结果，为您生成了专属水晶推荐方案，点击查看详情...</p>
+        </div>
+        <span class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0 mt-2"></span>
+      </div>
+      
+      <!-- 消息项2 -->
+      <div class="bg-white px-4 py-4 flex gap-3">
+        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-user-tie text-blue-500 text-lg"></i>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-medium text-gray-900">专属顾问王老师</h3>
+            <span class="text-xs text-gray-400">10分钟前</span>
+          </div>
+          <p class="text-sm text-gray-500">您好，我看到您的测算结果了，有一些专业的建议想和您分享...</p>
+        </div>
+        <span class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0 mt-2"></span>
+      </div>
+      
+      <!-- 消息项3 -->
+      <div class="bg-white px-4 py-4 flex gap-3">
+        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-check-circle text-green-500 text-lg"></i>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-medium text-gray-900">八字测算完成</h3>
+            <span class="text-xs text-gray-400">昨天</span>
+          </div>
+          <p class="text-sm text-gray-500">您的八字测算已完成，五行分析报告已生成，点击查看详细解读...</p>
+        </div>
+      </div>
+      
+      <!-- 消息项4 -->
+      <div class="bg-white px-4 py-4 flex gap-3">
+        <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-gift text-amber-500 text-lg"></i>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-medium text-gray-900">新品上市通知</h3>
+            <span class="text-xs text-gray-400">2天前</span>
+          </div>
+          <p class="text-sm text-gray-500">天然紫水晶洞新到货，限量特惠中，适合补火旺运...</p>
+        </div>
+      </div>
+      
+      <!-- 消息项5 -->
+      <div class="bg-white px-4 py-4 flex gap-3">
+        <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-heart text-pink-500 text-lg"></i>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-medium text-gray-900">会员福利</h3>
+            <span class="text-xs text-gray-400">3天前</span>
+          </div>
+          <p class="text-sm text-gray-500">恭喜您成为银卡会员，享受9折优惠和专属顾问服务...</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!-- 底部Tab Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-50" style="width: 393px; margin: 0 auto;">
+    <div class="flex justify-around items-start pt-2 pb-8">
+      <a href="home.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-home text-xl"></i><span class="text-[10px] mt-1">首页</span>
+      </a>
+      <a href="bazi-input.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-calculator text-xl"></i><span class="text-[10px] mt-1">测算</span>
+      </a>
+      <a href="crystal-recommend.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-gem text-xl"></i><span class="text-[10px] mt-1">推荐</span>
+      </a>
+      <a href="messages.html" class="flex flex-col items-center text-primary">
+        <i class="fas fa-comment-dots text-xl"></i><span class="text-[10px] mt-1">消息</span>
+      </a>
+      <a href="profile.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-user text-xl"></i><span class="text-[10px] mt-1">我的</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

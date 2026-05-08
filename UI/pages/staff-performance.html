@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>业绩统计 - 五行水晶DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: -apple-system, 'PingFang SC', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50" style="width: 393px; margin: 0 auto; min-height: 100vh;">
+  
+  <!-- 状态栏 -->
+  <div class="bg-white sticky top-0 z-50">
+    <div class="h-[54px] px-6 flex justify-between items-end pb-1">
+      <span class="text-[15px] font-semibold">9:41</span>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[12px] w-[126px] h-[37px] bg-black rounded-[20px]"></div>
+      <div class="flex items-center gap-1 text-sm">
+        <i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="bg-white border-b px-4 py-3 flex items-center justify-between">
+    <h1 class="font-semibold text-lg">业绩统计</h1>
+    <select class="text-sm text-gray-600 bg-transparent">
+      <option>本月</option>
+      <option>上月</option>
+      <option>本季度</option>
+    </select>
+  </div>
+
+  <!-- 核心数据 -->
+  <div class="bg-gradient-to-br from-gray-800 to-gray-900 mx-4 mt-4 rounded-2xl p-5 text-white">
+    <div class="text-center mb-4">
+      <p class="text-sm text-gray-400 mb-1">本月销售额</p>
+      <p class="text-4xl font-bold">¥68,520</p>
+      <p class="text-xs text-green-400 mt-1"><i class="fas fa-arrow-up mr-1"></i>较上月增长 23%</p>
+    </div>
+    <div class="grid grid-cols-3 divide-x divide-gray-700">
+      <div class="text-center">
+        <p class="text-xl font-bold">42</p>
+        <p class="text-xs text-gray-400 mt-1">新增客户</p>
+      </div>
+      <div class="text-center">
+        <p class="text-xl font-bold">28</p>
+        <p class="text-xs text-gray-400 mt-1">成交订单</p>
+      </div>
+      <div class="text-center">
+        <p class="text-xl font-bold">66%</p>
+        <p class="text-xs text-gray-400 mt-1">转化率</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数据明细 -->
+  <div class="px-4 mt-4 space-y-4 pb-24">
+    
+    <!-- 本周趋势 -->
+    <div class="bg-white rounded-2xl p-4">
+      <h3 class="font-medium text-gray-900 mb-4">本周趋势</h3>
+      <div class="flex items-end justify-between h-32 gap-2">
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-100 rounded-t" style="height: 40%"></div>
+          <p class="text-xs text-gray-500 mt-2">周一</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-100 rounded-t" style="height: 60%"></div>
+          <p class="text-xs text-gray-500 mt-2">周二</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-100 rounded-t" style="height: 45%"></div>
+          <p class="text-xs text-gray-500 mt-2">周三</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-100 rounded-t" style="height: 80%"></div>
+          <p class="text-xs text-gray-500 mt-2">周四</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-100 rounded-t" style="height: 55%"></div>
+          <p class="text-xs text-gray-500 mt-2">周五</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-900 rounded-t" style="height: 100%"></div>
+          <p class="text-xs text-gray-500 mt-2">周六</p>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+          <div class="w-full bg-gray-300 rounded-t" style="height: 30%"></div>
+          <p class="text-xs text-gray-500 mt-2">周日</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="bg-white rounded-2xl p-4">
+      <h3 class="font-medium text-gray-900 mb-4">门店排行</h3>
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <span class="w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center text-white text-xs font-bold">1</span>
+          <span class="ml-3 flex-1 text-gray-900">李明</span>
+          <span class="text-sm font-semibold">¥85,200</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-6 h-6 bg-gray-400 rounded-full flex items-center justify-center text-white text-xs font-bold">2</span>
+          <span class="ml-3 flex-1 text-gray-900">王芳</span>
+          <span class="text-sm font-semibold">¥72,100</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-6 h-6 bg-amber-600 rounded-full flex items-center justify-center text-white text-xs font-bold">3</span>
+          <span class="ml-3 flex-1 text-gray-900 font-semibold">我</span>
+          <span class="text-sm font-semibold text-primary">¥68,520</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 text-xs font-bold">4</span>
+          <span class="ml-3 flex-1 text-gray-900">赵强</span>
+          <span class="text-sm font-semibold">¥58,900</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部Tab -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t z-50" style="width: 393px; margin: 0 auto;">
+    <div class="flex justify-around items-start pt-2 pb-8">
+      <a href="staff-customers.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-users text-xl"></i><span class="text-[10px] mt-1">客户</span>
+      </a>
+      <a href="staff-performance.html" class="flex flex-col items-center text-gray-900">
+        <i class="fas fa-chart-bar text-xl"></i><span class="text-[10px] mt-1">业绩</span>
+      </a>
+      <a href="staff-invite.html" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-qrcode text-xl"></i><span class="text-[10px] mt-1">邀请</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-400">
+        <i class="fas fa-user text-xl"></i><span class="text-[10px] mt-1">我的</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
